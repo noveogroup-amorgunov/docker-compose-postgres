@@ -1,0 +1,7 @@
+postgres:
+  ports:
+    - '5436:5432'
+  restart: always
+  image: postgres:9.6.5-alpine
+  volumes:
+    - ./postgres-initdb.sh:/docker-entrypoint-initdb.d/init.sh
