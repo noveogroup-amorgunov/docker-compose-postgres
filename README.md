@@ -27,7 +27,9 @@ postgres:
     - ./postgres-initdb.sh:/docker-entrypoint-initdb.d/init.sh
 ```
 
-Now run command `docker-compose up` or `docker-compose up -d` to run container as process. To stop container run `docker-compose down`.
+Run command `docker-compose up` or `docker-compose up -d` to run container as process. To stop container run `docker-compose down`.
+
+Now you can work with database using follow connection url: `postgres://events:events@localhost:5436/events-api`.
 
 
 ### Solutions for possible problems
